@@ -159,7 +159,7 @@ function downloadCertificate() {
   // Centering the student name
   const textWidth = doc.getTextWidth(studentName);
   const xPosition = (doc.internal.pageSize.getWidth() - textWidth) / 2;
-  doc.text(studentName, xPosition, 110); 
+  doc.text(studentName, xPosition, 148); 
 
   // Save the PDF 
   doc.save(`${studentName}_certificate.pdf`); // Save with student name in the filename
