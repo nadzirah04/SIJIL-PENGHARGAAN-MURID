@@ -146,11 +146,11 @@
 
 function downloadCertificate() {
     const { jsPDF } = window.jspdf;
-    const doc = new jsPDF('l', 'mm', [279, 210]); // Tetapkan orientasi kepada landscape dengan saiz 27.9 cm x 21 cm
+    const doc = new jsPDF('l', 'mm', [297, 210]); // Tetapkan orientasi kepada landscape dengan saiz 27.9 cm x 21 cm
 
     // Muatkan imej latar belakang dan tambahkan ke PDF
     const backgroundImagePath = 'background.jpg'; // Gantikan dengan laluan imej latar belakang
-    doc.addImage(backgroundImagePath, 'JPEG', 0, 0, 279, 210); // Saiz penuh latar belakang
+    doc.addImage(backgroundImagePath, 'JPEG', 0, 0, 297, 210); // Saiz penuh latar belakang
   // Add text
   doc.setFontSize(32);
   doc.setTextColor(0, 0, 255);
